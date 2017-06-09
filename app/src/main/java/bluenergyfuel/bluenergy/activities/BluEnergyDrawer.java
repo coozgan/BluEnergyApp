@@ -110,7 +110,12 @@ public class BluEnergyDrawer extends AppCompatActivity
             });
 
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.drawer_main_fragment, new Rewards()).commit();
+            if (cardType){
+                fragmentManager.beginTransaction().replace(R.id.drawer_main_fragment, new Rewards()).commit();
+            }else {
+                fragmentManager.beginTransaction().replace(R.id.drawer_main_fragment, new News()).commit();
+            }
+
         }
     }
     private void initVolleyCallback() {

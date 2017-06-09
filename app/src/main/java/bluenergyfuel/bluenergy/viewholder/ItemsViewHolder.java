@@ -1,9 +1,15 @@
 package bluenergyfuel.bluenergy.viewholder;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
@@ -22,8 +28,7 @@ public class ItemsViewHolder extends RecyclerView.ViewHolder {
 
     public ItemsViewHolder(View itemView) {
         super(itemView);
-
-        mView = itemView;
+        mView = itemView;;
     }
 
     public void setTitle(String title){
@@ -36,6 +41,9 @@ public class ItemsViewHolder extends RecyclerView.ViewHolder {
 
     public  void setDesc(String points){
         TextView post_points = (TextView) mView.findViewById(R.id.rewards_post_points);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
+            post_points.setTextColor(Color.parseColor("#00ACED"));
+        }
         post_points.setText(points + " Pts.");
     }
     public void setImage(Context context, String image){

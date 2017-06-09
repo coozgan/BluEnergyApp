@@ -32,15 +32,16 @@
             android:textSize="18sp" />
 
         <LinearLayout
+            android:id="@+id/rewards_linear"
             android:layout_width="wrap_content"
             android:layout_height="36dp"
+            android:layout_alignBottom="@+id/rewards_post_image"
+            android:layout_alignEnd="@+id/rewards_post_image"
+            android:layout_alignRight="@+id/rewards_post_image"
             android:background="@drawable/submit_button"
             android:backgroundTint="@color/TwitterLogoBlue"
             android:orientation="horizontal"
-            android:padding="2dp"
-            android:layout_alignBottom="@+id/rewards_post_image"
-            android:layout_alignRight="@+id/rewards_post_image"
-            android:layout_alignEnd="@+id/rewards_post_image">
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/rewards_post_points"

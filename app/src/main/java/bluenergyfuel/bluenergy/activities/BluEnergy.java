@@ -1,5 +1,6 @@
 package bluenergyfuel.bluenergy.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,6 +9,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
@@ -111,16 +114,32 @@ public class BluEnergy extends BaseActivity implements PersonalInfo.OnPersonalIn
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.bluenergy_signin_fragment, new SignIn()).commit();
     }
+    public boolean isGooglePlayServicesAvailable(Activity activity) {
+        GoogleApiAvailability googleApiAvailability = GoogleApiAvailability.getInstance();
+        int status = googleApiAvailability.isGooglePlayServicesAvailable(activity);
+        if(status != ConnectionResult.SUCCESS) {
+            if(googleApiAvailability.isUserResolvableError(status)) {
+                googleApiAvailability.getErrorDialog(activity, status, 2404).show();
+            }
+            return false;
+        }
+        return true;
+    }
     public void verifyPhone(String phoneNumber, String card){
-        showProgressDialog();
-        cardNumber =card;
-        cellNumber = phoneNumber;
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                phoneNumber,        // Phone number to verify
-                60,                 // Timeout duration
-                TimeUnit.SECONDS,   // Unit of timeout
-                this,               // Activity (for callback binding)
-                mCallbacks);        // OnVerificationStateChangedCallback
+        if (isGooglePlayServicesAvailable(BluEnergy.this)){
+            showProgressDialog();
+            cardNumber =card;
+            cellNumber = phoneNumber;
+            PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                    phoneNumber,        // Phone number to verify
+                    60,                 // Timeout duration
+                    TimeUnit.SECONDS,   // Unit of timeout
+                    this,               // Activity (for callback binding)
+                    mCallbacks);        // OnVerificationStateChangedCallback
+        }else {
+            Toast.makeText(BluEnergy.this, "Please Update Google Play Services", Toast.LENGTH_LONG).show();
+        }
+
     }
     public void signInWithPhoneAuthCredential(PhoneAuthCredential phoneAuthCredential) {
         showProgressDialog();

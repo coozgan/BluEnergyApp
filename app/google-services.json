@@ -1,0 +1,236 @@
+{
+  "project_info": {
+    "project_number": "898006538514",
+    "firebase_url": "https://blu-energy-dc2da.firebaseio.com",
+    "project_id": "blu-energy-dc2da",
+    "storage_bucket": "blu-energy-dc2da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898006538514:android:42ea06f22b3c21e4",
+        "android_client_info": {
+          "package_name": "bluenergyfuel.blutag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8P9fehLwHuaDNtYXFMswXLINfCSQPnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898006538514:android:a8753e4cc124541a",
+        "android_client_info": {
+          "package_name": "bluenergyfuel.rewardsitem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8P9fehLwHuaDNtYXFMswXLINfCSQPnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898006538514:android:e0bab5be445f945a",
+        "android_client_info": {
+          "package_name": "bluenergyfuel.rewardsnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898006538514-7650d3hkpeebh1jabeuj6egbicjn7dbe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bluenergyfuel.rewardsnews",
+            "certificate_hash": "8c25cf0766010c0ab32544d0c6fd425ef531cf22"
+          }
+        },
+        {
+          "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8P9fehLwHuaDNtYXFMswXLINfCSQPnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898006538514:android:ce48651f4e0e984c",
+        "android_client_info": {
+          "package_name": "bluenergyfuel.bluenergyv005"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8P9fehLwHuaDNtYXFMswXLINfCSQPnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898006538514:android:06f827d6627388ab",
+        "android_client_info": {
+          "package_name": "bluenergyfuel.bluenergyv6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898006538514-n04433tdthsvddm0shkt1hqgs9im6gcu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bluenergyfuel.bluenergyv6",
+            "certificate_hash": "8c25cf0766010c0ab32544d0c6fd425ef531cf22"
+          }
+        },
+        {
+          "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8P9fehLwHuaDNtYXFMswXLINfCSQPnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898006538514:android:2fd67b3b098ef9e5",
+        "android_client_info": {
+          "package_name": "bluenergyfuel.bluenergy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898006538514-jc302bi1r9t6cpsp0gi9maotccrakei7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bluenergyfuel.bluenergy",
+            "certificate_hash": "8c25cf0766010c0ab32544d0c6fd425ef531cf22"
+          }
+        },
+        {
+          "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8P9fehLwHuaDNtYXFMswXLINfCSQPnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898006538514-k1um8ho1cp8i8o1hqp9tmmub8cc7f2d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

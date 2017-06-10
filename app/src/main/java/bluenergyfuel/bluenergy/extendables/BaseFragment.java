@@ -17,26 +17,9 @@ import org.json.JSONObject;
  */
 
 public class BaseFragment extends Fragment{
-    //
-    private ProgressDialog mProgressDialog;
-
-    //
 
     public void makeToast(String message){
         Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
-    }
-    public void showProgressDialog() {
-        if (mProgressDialog == null) {
-            mProgressDialog = new ProgressDialog(getActivity());
-            mProgressDialog.setCancelable(false);
-            mProgressDialog.setMessage("Loading...");
-        }
-        mProgressDialog.show();
-    }
-    public void hideProgressDialog() {
-        if (mProgressDialog != null && mProgressDialog.isShowing()) {
-            mProgressDialog.dismiss();
-        }
     }
     public void buttonEnabled(Button button){
         button.setEnabled(true);

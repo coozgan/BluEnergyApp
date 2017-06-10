@@ -28,7 +28,7 @@ public class ItemsViewHolder extends RecyclerView.ViewHolder {
 
     public ItemsViewHolder(View itemView) {
         super(itemView);
-        mView = itemView;;
+        mView = itemView;
     }
 
     public void setTitle(String title){
@@ -41,7 +41,7 @@ public class ItemsViewHolder extends RecyclerView.ViewHolder {
 
     public  void setDesc(String points){
         TextView post_points = (TextView) mView.findViewById(R.id.rewards_post_points);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.JELLY_BEAN){
             post_points.setTextColor(Color.parseColor("#00ACED"));
         }
         post_points.setText(points + " Pts.");

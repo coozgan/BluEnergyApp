@@ -24,7 +24,6 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.concurrent.TimeUnit;
@@ -126,8 +125,8 @@ public class BluEnergy extends BaseActivity implements PersonalInfo.OnPersonalIn
         return true;
     }
     public void verifyPhone(String phoneNumber, String card){
+        showProgressDialog();
         if (isGooglePlayServicesAvailable(BluEnergy.this)){
-            showProgressDialog();
             cardNumber =card;
             cellNumber = phoneNumber;
             PhoneAuthProvider.getInstance().verifyPhoneNumber(
